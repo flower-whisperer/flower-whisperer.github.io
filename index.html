@@ -1,32 +1,245 @@
----
-layout: default
-title: Home
-url: index.html
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIG Group | Data Intelligence Group</title>
+    <link rel="icon" href="image/ouc-dig.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        // 定义我们的品牌色
+                        brand: {
+                            900: '#0F172A', // 深蓝黑 (主色)
+                            600: '#2563EB', // 亮蓝 (强调色)
+                            50: '#F8FAFC',  // 背景白
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-50 text-slate-800 font-sans antialiased">
 
-<section class="relative bg-slate-900 overflow-hidden h-screen min-h-[600px] flex items-center justify-center">
-    <div class="absolute inset-0 z-0">
-        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" alt="Network" class="w-full h-full object-cover opacity-40">
-    </div>
-    <div class="absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-slate-900 via-slate-900/80 to-transparent z-0"></div>
-    <div class="absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-slate-900 via-slate-900/80 to-transparent z-0"></div>
-    <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-brand-50 via-brand-50/20 to-transparent z-0"></div>
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                
+                <div class="flex-shrink-0 flex items-center cursor-pointer group" onclick="window.scrollTo(0,0)">
+                    <img class="h-10 w-auto mr-3 transition-transform group-hover:scale-105" src="image/ouc-dig.png" alt="DIG Group Logo">
+                    <div class="flex flex-col">
+                        <span class="text-xl font-bold text-slate-900 leading-none tracking-tight">DIG <span class="text-blue-600">Group</span></span>
+                        <span class="text-[10px] font-medium text-slate-500 uppercase tracking-wider mt-0.5 group-hover:text-blue-600 transition-colors">Data Intelligence</span>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 transition-all">Home</a>
+                    <a href="#team" class="px-3 py-2 rounded-md text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 transition-all">People</a>
+                    <a href="#research" class="px-3 py-2 rounded-md text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 transition-all">Research</a>
+                    <a href="#publications" class="px-3 py-2 rounded-md text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 transition-all">Publications</a>
+                    <a href="#contact" class="px-3 py-2 rounded-md text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 transition-all">Contact</a>
 
-    <div class="relative z-10 max-w-7xl mx-auto px-4 text-center">
-        <div class="inline-flex items-center justify-center px-4 py-1.5 mb-8 rounded-full border border-blue-500/30 bg-slate-900/50 backdrop-blur-md">
-            <span class="relative flex h-3 w-3 mr-3">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
-            </span>
-            <span class="text-blue-200 text-sm font-medium tracking-wide">DIG Group</span>
+                    <div class="h-6 w-px bg-slate-300 mx-4"></div>
+
+                    <div class="relative group">
+                        <button class="flex items-center space-x-1 text-sm font-medium text-slate-700 hover:text-blue-600 focus:outline-none">
+                            <svg class="w-5 h-5 text-slate-400 group-hover:text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span>English</span>
+                            <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        
+                        <div class="absolute right-0 mt-2 w-24 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-right border border-slate-100">
+                            <div class="py-1">
+                                <a href="#" class="block px-4 py-2 text-sm text-blue-600 bg-blue-50 font-medium">English</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600">中文</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button class="text-slate-600 hover:text-blue-600 focus:outline-none p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </div>
-        <h1 class="text-5xl sm:text-7xl md:text-8xl font-extrabold tracking-tight text-white mb-6 drop-shadow-2xl">
-            Ignite <br class="sm:hidden" />
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-300 to-teal-200">Data Intelligence</span>
-        </h1>
-        <div class="mt-10 flex justify-center gap-4">
-            <a href="publications.html" class="inline-flex h-12 items-center justify-center rounded-full bg-blue-600 px-8 font-medium text-white hover:bg-blue-500 transition-all">View Publications</a>
-            <a href="people.html" class="inline-flex h-12 items-center justify-center rounded-full border border-white/20 bg-white/10 px-8 font-medium text-white backdrop-blur-md hover:bg-white/20">Meet the Team</a>
+    </nav>
+    <section class="relative bg-slate-900 overflow-hidden h-screen min-h-[600px] flex items-center justify-center">
+        
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" 
+                 alt="Data Network" 
+                 class="w-full h-full object-cover opacity-40"> </div>
+
+        <div class="absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-slate-900 via-slate-900/80 to-transparent z-0"></div>
+        <div class="absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-slate-900 via-slate-900/80 to-transparent z-0"></div>
+        
+        <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-brand-50 via-brand-50/20 to-transparent z-0"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <div class="inline-flex items-center justify-center px-4 py-1.5 mb-8 rounded-full border border-blue-500/30 bg-slate-900/50 backdrop-blur-md">
+                <span class="relative flex h-3 w-3 mr-3">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
+                </span>
+                <span class="text-blue-200 text-sm font-medium tracking-wide">DIG Group</span>
+            </div>
+
+            <h1 class="text-5xl sm:text-7xl md:text-8xl font-extrabold tracking-tight text-white mb-6 drop-shadow-2xl">
+                Ignite <br class="sm:hidden" />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-300 to-teal-200">
+                    Data Intelligence
+                </span>
+            </h1>
+
+            <p class="mt-6 max-w-2xl mx-auto text-lg sm:text-xl text-slate-200/90 font-light leading-relaxed">
+                Unleashing the potential of big data through advanced machine learning and network science.
+            </p>
+
+            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#publications" class="inline-flex h-12 items-center justify-center rounded-full bg-blue-600 px-8 font-medium text-white transition-all duration-300 hover:bg-blue-500 hover:scale-105 hover:shadow-[0_0_20px_rgba(37,99,235,0.5)]">
+                    View Publications
+                </a>
+
+                <a href="#team" class="inline-flex h-12 items-center justify-center rounded-full border border-white/20 bg-white/10 px-8 font-medium text-white backdrop-blur-md transition-all duration-300 hover:bg-white/20 hover:border-white/40">
+                    Meet the Team
+                </a>
+            </div>
         </div>
+    </section>
+
+
+
+    <section id="team" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 sm:text-4xl mb-4">Meet Our Team</h2>
+                <p class="max-w-2xl mx-auto text-lg text-slate-500 mb-10">
+                    A diverse group of researchers passionate about data intelligence.
+                </p>
+                
+                <div class="relative rounded-2xl overflow-hidden shadow-xl border border-slate-100 group">
+                    <img src="image/members_2025.jpg" 
+                         alt="DIG Group Team Photo" 
+                         class="w-full h-[400px] object-cover transform transition-transform duration-700 group-hover:scale-105">
+                    
+                    <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-6 text-left">
+                        <p class="text-white font-medium text-lg">DIG Group, 2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-2 mb-12" id="team-filters">
+                <button onclick="filterTeam('all')" class="filter-btn active px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 border border-transparent">
+                    All Members
+                </button>
+                <button onclick="filterTeam('faculty')" class="filter-btn px-6 py-2 rounded-full text-sm font-medium text-slate-600 hover:bg-slate-100 transition-all duration-300 border border-slate-200">
+                    Faculty
+                </button>
+                <button onclick="filterTeam('phd')" class="filter-btn px-6 py-2 rounded-full text-sm font-medium text-slate-600 hover:bg-slate-100 transition-all duration-300 border border-slate-200">
+                    PhD Students
+                </button>
+                <button onclick="filterTeam('master2024')" class="filter-btn px-6 py-2 rounded-full text-sm font-medium text-slate-600 hover:bg-slate-100 transition-all duration-300 border border-slate-200">
+                    Master 2024
+                </button>
+                <button onclick="filterTeam('master2023')" class="filter-btn px-6 py-2 rounded-full text-sm font-medium text-slate-600 hover:bg-slate-100 transition-all duration-300 border border-slate-200">
+                    Master 2023
+                </button>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8" id="team-grid">
+
+                <div class="team-card group relative bg-white rounded-xl border border-slate-200 p-6 hover:shadow-lg transition-all hover:-translate-y-1" data-category="faculty">
+                    <div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 ring-4 ring-blue-50">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Prof. Name" class="w-full h-full object-cover">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-lg font-bold text-slate-900">Prof. Zhang San</h3>
+                        <p class="text-blue-600 text-sm font-medium mb-2">Associate Professor</p>
+                        <p class="text-slate-500 text-xs mb-4 line-clamp-3">
+                            Research interests: Graph Neural Networks, Data Mining, Social Network Analysis.
+                        </p>
+                        <div class="flex justify-center space-x-3">
+                            <a href="#" class="text-slate-400 hover:text-blue-600"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></a> <a href="#" class="text-slate-400 hover:text-blue-600"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a> </div>
+                    </div>
+                    <div class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2 py-1 rounded">FACULTY</div>
+                </div>
+
+                <div class="team-card group relative bg-white rounded-xl border border-slate-200 p-6 hover:shadow-lg transition-all hover:-translate-y-1" data-category="faculty">
+                    <div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 ring-4 ring-blue-50">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Prof. Name" class="w-full h-full object-cover">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-lg font-bold text-slate-900">Prof. Li Si</h3>
+                        <p class="text-blue-600 text-sm font-medium mb-2">Assistant Professor</p>
+                        <p class="text-slate-500 text-xs mb-4 line-clamp-3">
+                            Research interests: NLP, Large Language Models, Knowledge Graphs.
+                        </p>
+                         <div class="flex justify-center space-x-3">
+                            <a href="#" class="text-slate-400 hover:text-blue-600"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
+                        </div>
+                    </div>
+                    <div class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2 py-1 rounded">FACULTY</div>
+                </div>
+
+                <div class="team-card group bg-white rounded-xl border border-slate-200 p-6 hover:shadow-lg transition-all hover:-translate-y-1" data-category="phd">
+                    <div class="w-20 h-20 mx-auto rounded-full overflow-hidden mb-3 ring-2 ring-slate-100">
+                        <img src="https://randomuser.me/api/portraits/men/86.jpg" alt="Student Name" class="w-full h-full object-cover">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-base font-bold text-slate-900">Wang Wu</h3>
+                        <p class="text-slate-500 text-xs mb-2">PhD Student (2021)</p>
+                        <p class="text-slate-400 text-xs line-clamp-2">Focusing on Trustworthy AI.</p>
+                    </div>
+                </div>
+
+                <div class="team-card group bg-white rounded-xl border border-slate-200 p-6 hover:shadow-lg transition-all hover:-translate-y-1" data-category="master2024">
+                    <div class="w-20 h-20 mx-auto rounded-full overflow-hidden mb-3 ring-2 ring-slate-100">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Student Name" class="w-full h-full object-cover">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-base font-bold text-slate-900">Zhao Liu</h3>
+                        <p class="text-slate-500 text-xs mb-2">Master Student (2024)</p>
+                        <p class="text-slate-400 text-xs line-clamp-2">Working on Graph Mining.</p>
+                    </div>
+                </div>
+
+                 <div class="team-card group bg-white rounded-xl border border-slate-200 p-6 hover:shadow-lg transition-all hover:-translate-y-1" data-category="master2023">
+                    <div class="w-20 h-20 mx-auto rounded-full overflow-hidden mb-3 ring-2 ring-slate-100">
+                        <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="Student Name" class="w-full h-full object-cover">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-base font-bold text-slate-900">Qian Qi</h3>
+                        <p class="text-slate-500 text-xs mb-2">Master Student (2023)</p>
+                        <p class="text-slate-400 text-xs line-clamp-2">Recommendation Systems.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-slate-100 py-10 text-center text-slate-400 text-sm">
+        © Copyright Data Intelligence Group - 2025
     </div>
-</section>
+
+</body>
+</html>
