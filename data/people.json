@@ -1,37 +1,232 @@
 [
   {
-    "name": "Prof. Zhang San",
+    "name": "姜桂圆",
     "role": "Associate Professor",
-    "category": "faculty",
-    "img": "https://randomuser.me/api/portraits/men/32.jpg",
-    "description": "Graph Neural Networks, Data Mining, Social Network Analysis"
+    "category": "Teacher",
+    "img": "image/people/jgy.jpg",
+    "description": "副教授 | 博士生导师 | 国家级/省级引才计划中国海洋大学信息科学与工程学部",
+    "url":"https://it.ouc.edu.cn/jgy/list.htm"
   },
   {
-    "name": "Prof. Li Si",
-    "role": "Assistant Professor",
-    "category": "faculty",
-    "img": "https://randomuser.me/api/portraits/women/44.jpg",
-    "description": "NLP, Large Language Models, Knowledge Graphs"
+    "name": "贺佩兰",
+    "role": "Lecturer",
+    "category": "Teacher",
+    "img": "image/people/plh.jpg",
+    "description": "讲师 | 硕士生导师 | 国家级博士后海外引才计划中国海洋大学信息科学与工程学部",
+    "url":"https://it.ouc.edu.cn/hpl/list.htm"
   },
   {
-    "name": "Wang Wu",
-    "role": "PhD Student (2021)",
+    "name": "赵晓彤",
+    "role": "PhD Student (2025)",
     "category": "phd",
-    "img": "https://randomuser.me/api/portraits/men/86.jpg",
-    "description": "Focusing on Trustworthy AI"
+    "img": "image/people/zxt.jpg",
+    "description": "研究方向：交通数据分析与应用"
   },
   {
-    "name": "Zhao Liu",
-    "role": "Master Student (2024)",
-    "category": "master2024",
-    "img": "https://randomuser.me/api/portraits/women/65.jpg",
-    "description": "Working on Graph Mining"
+    "name": "李权峰",
+    "role": "PhD Student (2025)",
+    "category": "phd",
+    "img": "image/people/lqf.jpg",
+    "description": "研究方向：代码安全"
   },
   {
-    "name": "Qian Qi",
+    "name": "刘泷泽",
+    "role": "PhD Student ",
+    "category": "phd",
+    "img": "image/people/llz.jpg",
+    "description": "研究方向：组合优化"
+  },
+  {
+    "name": "崔龙跃",
     "role": "Master Student (2023)",
     "category": "master2023",
-    "img": "https://randomuser.me/api/portraits/men/12.jpg",
-    "description": "Recommendation Systems"
+    "img": "image/people/cly.jpg",
+    "description": "研究方向：交通大数据"
+  },{
+    "name": "周承文",
+    "role": "Master Student (2023)",
+    "category": "master2023",
+    "img": "image/people/zcw.jpg",
+    "description": "研究方向：代码安全"
+  },{
+    "name": "吴梦婷",
+    "role": "Master Student (2023)",
+    "category": "master2023",
+    "img": "image/people/wmt.jpg",
+    "description": "研究方向：交通大数据"
+  },{
+    "name": "叶传梁",
+    "role": "Master Student (2023)",
+    "category": "master2023",
+    "img": "image/people/cly.jpg",
+    "description": "研究方向：图攻击"
+  },{
+    "name": "王以晓",
+    "role": "Master Student (2023)",
+    "category": "master2023",
+    "img": "image/people/wyx.jpg",
+    "description": "研究方向：交通大数据"
+  },{
+    "name": "王浩文",
+    "role": "Master Student (2023)",
+    "category": "master2023",
+    "img": "image/people/cly.jpg",
+    "description": "研究方向：代码安全"
+  },{
+    "name": "高荣昊",
+    "role": "Master Student (2023)",
+    "category": "master2023",
+    "img": "image/people/grh.jpg",
+    "description": "研究方向：交通大数据"
+  },{
+    "name": "高荣昊",
+    "role": "Master Student (2023)",
+    "category": "master2023",
+    "img": "image/people/grh.jpg",
+    "description": "研究方向：交通大数据"
+  },{
+    "name": "赵腾飞",
+    "role": "Master Student (2023)",
+    "category": "master2023",
+    "img": "image/people/ztf.jpg",
+    "description": "研究方向：交通大数据"
+  },{
+    "name": "李豪",
+    "role": "Master Student (2024)",
+    "category": "master2024",
+    "img": "image/people/lihao.jpg",
+    "description": "研究方向：代码安全"
+  },{
+    "name": "毛俊杰",
+    "role": "Master Student (2024)",
+    "category": "master2024",
+    "img": "image/people/maojunjie.jpg",
+    "description": "研究方向：交通大数据"
+  },{
+    "name": "王俊龙",
+    "role": "Master Student (2024)",
+    "category": "master2024",
+    "img": "image/people/wangjunlong.jpg",
+    "description": "研究方向：代码安全"
+  },{
+    "name": "杨明坤",
+    "role": "Master Student (2024)",
+    "category": "master2024",
+    "img": "image/people/yangmingkun.jpg",
+    "description": "研究方向：代码安全"
+  },{
+    "name": "董屹涛",
+    "role": "Master Student (2024)",
+    "category": "master2024",
+    "img": "image/people/dongyitao.jpg",
+    "description": "研究方向：图攻击"
+  },{
+    "name": "张泽纬",
+    "role": "Master Student (2024)",
+    "category": "master2024",
+    "img": "image/people/zhangzewei.jpg",
+    "description": "研究方向：4D轨迹预测"
+  },{
+    "name": "王小璐",
+    "role": "Master Student (2024)",
+    "category": "master2024",
+    "img": "image/people/wangxiaolu.jpg",
+    "description": "研究方向：组合优化"
+  },{
+    "name": "祁耀东",
+    "role": "Master Student (2024)",
+    "category": "master2024",
+    "img": "image/people/qiyaodong.jpg",
+    "description": "研究方向：交通大数据"
+  },{
+    "name": "李红帅",
+    "role": "Master Student (2024)",
+    "category": "master2024",
+    "img": "image/people/lihongshuai.jpg",
+    "description": "研究方向：代码安全"
+  },{
+    "name": "李德彧",
+    "role": "Master Student (2024)",
+    "category": "master2024",
+    "img": "image/people/lideyu.jpg",
+    "description": "研究方向：4D轨迹预测"
+  },{
+    "name": "张曾锋",
+    "role": "Master Student (2024)",
+    "category": "master2024",
+    "img": "image/people/zhangzengfeng.jpg",
+    "description": "研究方向：交通大数据"
+  },{
+    "name": "金邺诚",
+    "role": "Master Student (2024)",
+    "category": "master2024",
+    "img": "image/people/jinyecheng.jpg",
+    "description": "研究方向：4D轨迹预测"
+  },{
+    "name": "刘翔宇",
+    "role": "Master Student (2024)",
+    "category": "master2024",
+    "img": "image/people/liuxiangyu.jpg",
+    "description": "研究方向：组合优化"
+  },{
+    "name": "耿庆桦",
+    "role": "Master Student (2024)",
+    "category": "master2024",
+    "img": "image/people/gengqinghua.jpg",
+    "description": "研究方向：交通大数据"
+  },{
+    "name": "于冲",
+    "role": "Master Student (2025)",
+    "category": "master2025",
+    "img": "image/people/yuchong.jpg",
+    "description": ""
+  },{
+    "name": "吴子博",
+    "role": "Master Student (2025)",
+    "category": "master2025",
+    "img": "image/people/wuzibo.jpg",
+    "description": ""
+  },{
+    "name": "匡淼",
+    "role": "Master Student (2025)",
+    "category": "master2025",
+    "img": "image/people/kuangmiao.jpg",
+    "description": ""
+  },{
+    "name": "李子昊",
+    "role": "Master Student (2025)",
+    "category": "master2025",
+    "img": "image/people/lizihao.jpg",
+    "description": ""
+  },{
+    "name": "陈明威",
+    "role": "Master Student (2025)",
+    "category": "master2025",
+    "img": "image/people/chenmingwei.jpg",
+    "description": ""
+  },{
+    "name": "朱峰辉",
+    "role": "Master Student (2025)",
+    "category": "master2025",
+    "img": "image/people/zhufenghui.jpg",
+    "description": ""
+  },{
+    "name": "李雨行",
+    "role": "Master Student (2025)",
+    "category": "master2025",
+    "img": "image/people/liyuhang.jpg",
+    "description": ""
+  },{
+    "name": "田恩",
+    "role": "Master Student (2025)",
+    "category": "master2025",
+    "img": "image/people/tianen.jpg",
+    "description": ""
+  },{
+    "name": "阮明航",
+    "role": "Master Student (2025)",
+    "category": "master2025",
+    "img": "image/people/ruanminghang.jpg",
+    "description": ""
   }
 ]

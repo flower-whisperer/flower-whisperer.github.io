@@ -249,7 +249,7 @@ function renderTeam(data) {
                 <img src="${person.img}" alt="${person.name}" class="w-full h-full object-cover">
             </div>
             <div class="text-center">
-                <h3 class="text-lg font-bold text-slate-900">${person.name}</h3>
+                <h3 class="text-lg font-bold text-slate-900"><a href="${person.url}" target="_blank">${person.name}</a></h3>
                 <p class="text-blue-600 text-sm font-medium mb-2">${person.role}</p>
                 <p class="text-slate-500 text-xs mb-4 line-clamp-3">
                     ${person.description}
