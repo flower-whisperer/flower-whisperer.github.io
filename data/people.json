@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Prof. Zhang San",
+    "role": "Associate Professor",
+    "category": "faculty",
+    "img": "https://randomuser.me/api/portraits/men/32.jpg",
+    "description": "Graph Neural Networks, Data Mining, Social Network Analysis"
+  },
+  {
+    "name": "Prof. Li Si",
+    "role": "Assistant Professor",
+    "category": "faculty",
+    "img": "https://randomuser.me/api/portraits/women/44.jpg",
+    "description": "NLP, Large Language Models, Knowledge Graphs"
+  },
+  {
+    "name": "Wang Wu",
+    "role": "PhD Student (2021)",
+    "category": "phd",
+    "img": "https://randomuser.me/api/portraits/men/86.jpg",
+    "description": "Focusing on Trustworthy AI"
+  },
+  {
+    "name": "Zhao Liu",
+    "role": "Master Student (2024)",
+    "category": "master2024",
+    "img": "https://randomuser.me/api/portraits/women/65.jpg",
+    "description": "Working on Graph Mining"
+  },
+  {
+    "name": "Qian Qi",
+    "role": "Master Student (2023)",
+    "category": "master2023",
+    "img": "https://randomuser.me/api/portraits/men/12.jpg",
+    "description": "Recommendation Systems"
+  }
+]
