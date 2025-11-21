@@ -58,7 +58,7 @@
     "name": "叶传梁",
     "role": "Master Student (2023)",
     "category": "master2023",
-    "img": "image/people/cly.jpg",
+    "img": "image/people/ycl.png",
     "description": "研究方向：图攻击"
   },{
     "name": "王以晓",
@@ -70,14 +70,8 @@
     "name": "王浩文",
     "role": "Master Student (2023)",
     "category": "master2023",
-    "img": "image/people/cly.jpg",
+    "img": "image/people/whw.png",
     "description": "研究方向：代码安全"
-  },{
-    "name": "高荣昊",
-    "role": "Master Student (2023)",
-    "category": "master2023",
-    "img": "image/people/grh.jpg",
-    "description": "研究方向：交通大数据"
   },{
     "name": "高荣昊",
     "role": "Master Student (2023)",
@@ -214,7 +208,7 @@
     "name": "李雨行",
     "role": "Master Student (2025)",
     "category": "master2025",
-    "img": "image/people/liyuhang.png",
+    "img": "image/people/liyuhang.jpg",
     "description": ""
   },{
     "name": "田恩",
