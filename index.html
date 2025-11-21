@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,64 +9,86 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="tailwind.config.js"></script>
     <style>
-    .filter-btn.active {
-        background-color: #2563eb;
-        color: white !important;
-        border-color: transparent;
-    }   
+        .filter-btn.active {
+            background-color: #2563eb;
+            color: white !important;
+            border-color: transparent;
+        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
+
 <body class="bg-brand-50 text-slate-800 font-sans antialiased">
 
-    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all duration-300">
+    <nav
+        class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                
+
                 <div class="flex-shrink-0 flex items-center cursor-pointer group" onclick="window.scrollTo(0,0)">
-                    <img class="h-10 w-auto mr-3 transition-transform group-hover:scale-105" src="image/ouc-dig.png" alt="DIG Group Logo">
+                    <img class="h-10 w-auto mr-3 transition-transform group-hover:scale-105" src="image/ouc-dig.png"
+                        alt="DIG Group Logo">
                     <div class="flex flex-col">
-                        <span class="text-xl font-bold text-slate-900 leading-none tracking-tight">DIG <span class="text-blue-600">Group</span></span>
-                        <span class="text-[10px] font-medium text-slate-500 uppercase tracking-wider mt-0.5 group-hover:text-blue-600 transition-colors">Data Intelligence</span>
+                        <span class="text-xl font-bold text-slate-900 leading-none tracking-tight">DIG <span
+                                class="text-blue-600">Group</span></span>
+                        <span
+                            class="text-[10px] font-medium text-slate-500 uppercase tracking-wider mt-0.5 group-hover:text-blue-600 transition-colors">Data
+                            Intelligence</span>
                     </div>
                 </div>
-                
+
                 <div class="hidden md:flex items-center space-x-1">
-                    <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 transition-all">Home</a>
-                    <a href="#team" class="px-3 py-2 rounded-md text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 transition-all">People</a>
-                    <a href="#research" class="px-3 py-2 rounded-md text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 transition-all">Research</a>
-                    <a href="#publications" class="px-3 py-2 rounded-md text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 transition-all">Publications</a>
-                    <a href="#contact" class="px-3 py-2 rounded-md text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 transition-all">Contact</a>
+                    <a href="#"
+                        class="px-3 py-2 rounded-md text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 transition-all">Home</a>
+                    <a href="#team"
+                        class="px-3 py-2 rounded-md text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 transition-all">People</a>
+                    <a href="#research"
+                        class="px-3 py-2 rounded-md text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 transition-all">Research</a>
+                    <a href="#publications"
+                        class="px-3 py-2 rounded-md text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 transition-all">Publications</a>
+                    <a href="#contact"
+                        class="px-3 py-2 rounded-md text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 transition-all">Contact</a>
 
                     <div class="h-6 w-px bg-slate-300 mx-4"></div>
-
-                    <div class="relative group">
-                        <button class="flex items-center space-x-1 text-sm font-medium text-slate-700 hover:text-blue-600 focus:outline-none">
-                            <svg class="w-5 h-5 text-slate-400 group-hover:text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    <!-- 完全需要的中英文切换 -->
+                    <!-- <div class="relative group"> -->
+                        <!-- <button
+                            class="flex items-center space-x-1 text-sm font-medium text-slate-700 hover:text-blue-600 focus:outline-none">
+                            <svg class="w-5 h-5 text-slate-400 group-hover:text-blue-500" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                </path>
                             </svg>
                             <span>English</span>
-                            <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                        </button>
-                        
-                        <div class="absolute right-0 mt-2 w-24 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-right border border-slate-100">
+                            <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button> -->
+
+                        <!-- <div
+                            class="absolute right-0 mt-2 w-24 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-right border border-slate-100">
                             <div class="py-1">
-                                <a href="#" class="block px-4 py-2 text-sm text-blue-600 bg-blue-50 font-medium">English</a>
-                                <a href="#" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600">中文</a>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-blue-600 bg-blue-50 font-medium">English</a>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600">中文</a>
                             </div>
-                        </div>
-                    </div>
+                        </div> -->
+                    <!-- </div> -->
                 </div>
 
                 <div class="md:hidden flex items-center">
                     <button class="text-slate-600 hover:text-blue-600 focus:outline-none p-2">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
                 </div>
@@ -73,23 +96,31 @@
         </div>
     </nav>
     <section class="relative bg-slate-900 overflow-hidden h-screen min-h-[600px] flex items-center justify-center">
-        
-        <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" 
-                 alt="Data Network" 
-                 class="w-full h-full object-cover opacity-40"> </div>
 
-        <div class="absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-slate-900 via-slate-900/80 to-transparent z-0"></div>
-        <div class="absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-slate-900 via-slate-900/80 to-transparent z-0"></div>
-        
-        <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-brand-50 via-brand-50/20 to-transparent z-0"></div>
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80"
+                alt="Data Network" class="w-full h-full object-cover opacity-40">
+        </div>
+
+        <div
+            class="absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-slate-900 via-slate-900/80 to-transparent z-0">
+        </div>
+        <div
+            class="absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-slate-900 via-slate-900/80 to-transparent z-0">
+        </div>
+
+        <div
+            class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-brand-50 via-brand-50/20 to-transparent z-0">
+        </div>
 
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            
-            <div class="inline-flex items-center justify-center px-4 py-1.5 mb-8 rounded-full border border-blue-500/30 bg-slate-900/50 backdrop-blur-md">
+
+            <div
+                class="inline-flex items-center justify-center px-4 py-1.5 mb-8 rounded-full border border-blue-500/30 bg-slate-900/50 backdrop-blur-md">
                 <span class="relative flex h-3 w-3 mr-3">
-                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                  <span class="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
+                    <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
                 </span>
                 <span class="text-blue-200 text-sm font-medium tracking-wide">DIG Group</span>
             </div>
@@ -106,11 +137,13 @@
             </p>
 
             <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#publications" class="inline-flex h-12 items-center justify-center rounded-full bg-blue-600 px-8 font-medium text-white transition-all duration-300 hover:bg-blue-500 hover:scale-105 hover:shadow-[0_0_20px_rgba(37,99,235,0.5)]">
+                <a href="#publications"
+                    class="inline-flex h-12 items-center justify-center rounded-full bg-blue-600 px-8 font-medium text-white transition-all duration-300 hover:bg-blue-500 hover:scale-105 hover:shadow-[0_0_20px_rgba(37,99,235,0.5)]">
                     View Publications
                 </a>
 
-                <a href="#team" class="inline-flex h-12 items-center justify-center rounded-full border border-white/20 bg-white/10 px-8 font-medium text-white backdrop-blur-md transition-all duration-300 hover:bg-white/20 hover:border-white/40">
+                <a href="#team"
+                    class="inline-flex h-12 items-center justify-center rounded-full border border-white/20 bg-white/10 px-8 font-medium text-white backdrop-blur-md transition-all duration-300 hover:bg-white/20 hover:border-white/40">
                     Meet the Team
                 </a>
             </div>
@@ -120,190 +153,1210 @@
     <!-- team页面 -->
 
 
-        <section id="team" class="py-20 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl font-bold text-slate-900 sm:text-4xl mb-4">Meet Our Team</h2>
-                    <p class="max-w-2xl mx-auto text-lg text-slate-500 mb-10">
-                        A diverse group of researchers passionate about data intelligence.
-                    </p>
-                    
-                    <div class="relative rounded-2xl overflow-hidden shadow-xl border border-slate-100 group">
-                        <img src="image/members_2025.jpg" 
-                            alt="DIG Group Team Photo" 
-                            class="w-full h-[400px] object-cover transform transition-transform duration-700 group-hover:scale-105">
-                        
-                        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-6 text-left">
-                            <p class="text-white font-medium text-lg">DIG Group, 2025</p>
+    <section id="team" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 sm:text-4xl mb-4">Meet Our Team</h2>
+                <p class="max-w-2xl mx-auto text-lg text-slate-500 mb-10">
+                    A diverse group of researchers passionate about data intelligence.
+                </p>
+
+                <div class="relative rounded-2xl overflow-hidden shadow-xl border border-slate-100 group">
+                    <img src="image/members_2025.jpg" alt="DIG Group Team Photo"
+                        class="w-full h-[400px] object-cover transform transition-transform duration-700 group-hover:scale-105">
+
+                    <div
+                        class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-6 text-left">
+                        <p class="text-white font-medium text-lg">DIG Group, 2025</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 搜索框 -->
+            <div class="max-w-md mx-auto mb-10">
+                <input type="text" id="team-search" placeholder="Search members..."
+                    class="w-full px-4 py-2 border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                    oninput="searchTeam()">
+            </div>
+            <div class="flex flex-wrap justify-center gap-2 mb-12" id="team-filters">
+                <button onclick="filterTeam('all')"
+                    class="filter-btn active px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 border border-transparent">
+                    All Members
+                </button>
+                <button onclick="filterTeam('faculty')"
+                    class="filter-btn px-6 py-2 rounded-full text-sm font-medium text-slate-600 hover:bg-slate-100 transition-all duration-300 border border-slate-200">
+                    Faculty
+                </button>
+                <button onclick="filterTeam('phd')"
+                    class="filter-btn px-6 py-2 rounded-full text-sm font-medium text-slate-600 hover:bg-slate-100 transition-all duration-300 border border-slate-200">
+                    PhD Students
+                </button>
+                <button onclick="filterTeam('master2025')"
+                    class="filter-btn px-6 py-2 rounded-full text-sm font-medium text-slate-600 hover:bg-slate-100 transition-all duration-300 border border-slate-200">
+                    Master 2025
+                </button>
+                <button onclick="filterTeam('master2024')"
+                    class="filter-btn px-6 py-2 rounded-full text-sm font-medium text-slate-600 hover:bg-slate-100 transition-all duration-300 border border-slate-200">
+                    Master 2024
+                </button>
+                <button onclick="filterTeam('master2023')"
+                    class="filter-btn px-6 py-2 rounded-full text-sm font-medium text-slate-600 hover:bg-slate-100 transition-all duration-300 border border-slate-200">
+                    Master 2023
+                </button>
+            </div>
+            <!-- 人员展示 -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8" id="team-grid">
+                <!-- JS will insert cards here -->
+            </div>
+            <!-- 分页逻辑 -->
+            <div class="flex justify-center mt-12 space-x-2" id="pagination-controls">
+            </div>
+
+        </div>
+    </section>
+    <!-- Research部分 -->
+    <section id="research" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-16">
+                <h2 class="text-xs font-semibold tracking-widest text-blue-600 uppercase mb-2">
+                    OUR FOCUS AREAS
+                </h2>
+
+                <h3
+                    class="text-4xl font-extrabold text-slate-900 sm:text-5xl mb-4  text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
+                    #1. 公共交通智能优化与拥堵治理
+                </h3>
+                —— 以智能优化解锁城市通行新格局，构建智能协同、绿色低碳、个性驱动的未来交通生态体系！
+            </div>
+
+            <div class="space-y-10">
+                <!-- 第一个子方向 -->
+                <div
+                    class="grid md:grid-cols-12 gap-6 items-center bg-white p-8 md:p-12 rounded-2xl shadow-xl border border-slate-100">
+
+                    <div class="md:col-span-12">
+
+                        <h4 class="mt-2 text-2xl font-extrabold text-slate-900 leading-snug">
+                            公共交通服务评价体系
+                        </h4>
+                        <p class="mt-4 text-slate-600 text-lg">
+                            日益严重的交通拥堵问题，不仅降低了城市运行效率，更影响居民的出行体验和生活品质。尽管政府长期推行“公交优先”政策，但公共交通的便捷性、舒适度和准时率仍未达到人们的期望。解决这一问题迫切需要先进的数据分析和人工智能技术。
+                        </p>
+                    </div>
+
+                    <div class="md:col-span-6">
+                        <div class="rounded-xl shadow-2xl transition-transform duration-500 hover:scale-[1.02] overflow-hidden cursor-pointer"
+                            onclick="openModal('image/research/1-1.png', '图 1: 不同公交线路短期、中期和长期的稳定性值变化趋势分析图（BUS 2线路与BUS 3线路对比）。')">
+                            <img src="image/research/1-1.png" alt="不同公交线路短期、中期和长期的稳定性值变化趋势分析图（BUS 2线路与BUS 3线路对比）" />
+                        </div>
+                        <p class="text-sm text-center text-slate-500 mt-2">
+                            图1：不同公交线路短期、中期和长期的稳定性值变化趋势分析图。
+                        </p>
+                    </div>
+
+                    <div class="md:col-span-6">
+                        <div class="rounded-xl shadow-2xl transition-transform duration-500 hover:scale-[1.02] overflow-hidden cursor-pointer"
+                            onclick="openModal('image/research/1-2.png', '图 2:站点/行程指标度量方法示意图，展示了多源数据如何融合分析用于公交服务评价体系')">
+                            <img src="image/research/1-2.png" alt="交通优化可视化图 2" />
+                        </div>
+                        <p class="text-sm text-center text-slate-500 mt-2">
+                            图 2: 站点/行程指标度量方法示意图，多源数据如何融合分析用于公交服务评价体系
+                        </p>
+                    </div>
+                </div>
+                <!-- 第二个子方向 -->
+                <div
+                    class="grid md:grid-cols-12 gap-6 items-center bg-white p-8 md:p-12 rounded-2xl shadow-xl border border-slate-100">
+
+                    <div class="md:col-span-12">
+
+                        <h4 class="mt-2 text-2xl font-extrabold text-slate-900 leading-snug">
+                            交通拥堵演化规律
+                        </h4>
+                        <p class="mt-4 text-slate-600 text-lg">
+                            分析道路网络上的拥堵如何演化，并研究天气、事件等外部因素的影响，提升预测准确性并辅助交通管理。
+                        </p>
+                    </div>
+
+                    <div class="md:col-span-6">
+                        <div class="rounded-xl shadow-2xl transition-transform duration-500 hover:scale-[1.02] overflow-hidden cursor-pointer"
+                            onclick="openModal('image/research/1-3.gif', '图 3: 交通拥堵演化规律动态图，直观展示道路网络交通拥堵如何随时间动态变化')">
+                            <img src="image/research/1-3.gif" alt="交通优化可视化图 3" />
+                        </div>
+                        <p class="text-sm text-center text-slate-500 mt-2">
+                            图3：交通拥堵演化规律动态图，直观展示道路网络交通拥堵如何随时间动态变化
+                        </p>
+                    </div>
+
+                    <div class="md:col-span-6">
+                        <div class="rounded-xl shadow-2xl transition-transform duration-500 hover:scale-[1.02] overflow-hidden cursor-pointer"
+                            onclick="openModal('image/research/1-4.png', '图 4:交通拥堵事件对交通状态影响分析图')">
+                            <img src="image/research/1-4.png" alt="交通优化可视化图 4" />
+                        </div>
+                        <p class="text-sm text-center text-slate-500 mt-2">
+                            图 4: 交通拥堵事件对交通状态影响分析图
+                        </p>
+                    </div>
+                </div>
+                <!-- 第三个子方向 -->
+                <div
+                    class="grid md:grid-cols-12 gap-6 items-center bg-white p-8 md:p-12 rounded-2xl shadow-xl border border-slate-100">
+
+                    <div class="md:col-span-12">
+
+                        <h4 class="mt-2 text-2xl font-extrabold text-slate-900 leading-snug">
+                            数据驱动公共交通优化
+                        </h4>
+                        <p class="mt-4 text-slate-600 text-lg">
+                            深度挖掘交通规律，构建数据驱动的优化框架，自动推理优调度策略，提升交通效率。
+                        </p>
+                    </div>
+                    <div class="md:col-span-6">
+                        <div class="rounded-xl shadow-2xl transition-transform duration-500 hover:scale-[1.02] overflow-hidden cursor-pointer"
+                            onclick="openModal('image/research/1-6.jpg', '图 4:数据驱动公共交通优化框架流程示意图，展示优化策略推理过程')">
+                            <img src="image/research/1-6.jpg" alt="交通优化可视化图 5" />
+                        </div>
+                        <p class="text-sm text-center text-slate-500 mt-2">
+                            图 5: 数据驱动公共交通优化框架流程示意图，展示优化策略推理过程
+                        </p>
+                    </div>
+                    <div class="md:col-span-6">
+                        <div class="rounded-xl shadow-2xl transition-transform duration-500 hover:scale-[1.02] overflow-hidden cursor-pointer"
+                            onclick="openModal('image/research/1-5.png', '图 6: 数据驱动的公共交通效率提升效果示意图')">
+                            <img src="image/research/1-5.png" alt="交通优化可视化图 6" />
+                        </div>
+                        <p class="text-sm text-center text-slate-500 mt-2">
+                            图6：数据驱动的公共交通效率提升效果示意图
+                        </p>
+                    </div>
+                </div>
+                <!-- 第四个子方向 -->
+                <div
+                    class="grid md:grid-cols-12 gap-6 items-center bg-white p-8 md:p-12 rounded-2xl shadow-xl border border-slate-100">
+
+                    <div class="md:col-span-12">
+
+                        <h4 class="mt-2 text-2xl font-extrabold text-slate-900 leading-snug">
+                            优化公交专用车道的调度策略
+                        </h4>
+                        <p class="mt-4 text-slate-600 text-lg">
+                            通过智能算法合理分配专用车道资源，减少交通拥堵，提升公交车的准点率和运行效率。 </p>
+                    </div>
+
+                    <div class="md:col-span-12">
+                        <div class="rounded-xl shadow-2xl transition-transform duration-500 hover:scale-[1.02] overflow-hidden cursor-pointer"
+                            onclick="openModal('image/research/1-7.jpg', '图 7: 公交专用车道优化调度策略实施效果图')">
+                            <img src="image/research/1-7.jpg" alt="交通优化可视化图 7" />
+                        </div>
+                        <p class="text-sm text-center text-slate-500 mt-2">
+                            图7：公交专用车道优化调度策略实施效果图
+                        </p>
+                    </div>
+                </div>
+                <!-- 第二个大方向 -->
+                <div class="text-center mb-16 ">
+                    <h3
+                        class="text-4xl font-extrabold text-slate-900 sm:text-5xl mb-4  text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-amber-400  ">
+                        #2. 4D航空轨迹数据分析与应用
+                    </h3>
+                    —— 从亿万条航迹中解码天空秩序，让飞行更安全、更高效、更环保！
+                </div>
+
+                <div
+                    class="grid md:grid-cols-12 gap-6 items-center bg-white p-8 md:p-12 rounded-2xl shadow-xl border border-slate-100">
+
+                    <div class="md:col-span-12">
+
+                        <h4 class="mt-2 text-2xl font-extrabold text-slate-900 leading-snug">
+                            软件代码智能分析与优化
+                        </h4>
+                        <p class="mt-4 text-slate-600 text-lg">
+                            通过智能算法合理分配专用车道资源，减少交通拥堵，提升公交车的准点率和运行效率。 </p>
+                    </div>
+
+                    <div class="md:col-span-6">
+                        <div class="rounded-xl shadow-2xl transition-transform duration-500 hover:scale-[1.02] overflow-hidden cursor-pointer"
+                            onclick="openModal('image/research/2-1.jpg', '图 2-1: 4D航空轨迹数据可视化分析示意图，展示了二维平面航迹和三维空间立体航迹分析结果')">
+                            <img src="image/research/2-1.jpg" alt="图 2-1" />
+                        </div>
+                        <p class="text-sm text-center text-slate-500 mt-2">
+                            图2-1：4D航空轨迹数据可视化分析示意图，展示了二维平面航迹和三维空间立体航迹分析结果
+                        </p>
+                    </div>
+                    <div class="md:col-span-6">
+                        <div class="rounded-xl shadow-2xl transition-transform duration-500 hover:scale-[1.02] overflow-hidden cursor-pointer"
+                            onclick="openModal('image/research/2-2.jpg', '图 2-2: 机场航空交通实景图，展示飞机起飞、机场塔台及机场整体环境')">
+                            <img src="image/research/2-2.jpg" alt="图 2-2" />
+                        </div>
+                        <p class="text-sm text-center text-slate-500 mt-2">
+                            图2-2：机场航空交通实景图，展示飞机起飞、机场塔台及机场整体环境
+                        </p>
+                    </div>
+                </div>
+                <!-- 第三个大方向 -->
+                <div class="text-center mb-16 ">
+                    <h3
+                        class="text-4xl font-extrabold text-slate-900 sm:text-5xl mb-4  text-transparent bg-clip-text bg-gradient-to-r from-indigo-700 to-pink-500  ">
+                        #3. 软件代码智能分析与优化
+                    </h3>
+                    —— 探究前沿AI技术，洞见代码之复杂，保障软件之安全、可靠、高效！
+                </div>
+                <div
+                    class="grid md:grid-cols-12 gap-6 items-center bg-white p-8 md:p-12 rounded-2xl shadow-xl border border-slate-100">
+
+                    <div class="md:col-span-12">
+
+                        <h4 class="mt-2 text-2xl font-extrabold text-slate-900 leading-snug">
+                            以 AI 驱动代码结构解析、性能瓶颈定位与效率迭代，实现软件全生命周期的智能提质增效。
+                        </h4>
+                        <p class="mt-4 text-slate-600 text-lg">
+                            <b>代码漏洞检测：</b> 开发代码表征学习技术和智能安全分析工具，自动发现代码中的潜在漏洞，提高软件系统的安全性。<br>
+                            <b>代码相似性检测：</b> 通过先进的代码比较技术，识别相似代码片段，对源码重用、抄袭及漏洞传递等进行检测。 <br>
+                            <b>代码攻击与保护策略： </b>利用AI方法研究如何识别、预防和抵御针对软件代码的恶意攻击。
+                        </p>
+                    </div>
+
+                    <div class="md:col-span-6">
+                        <div class="rounded-xl shadow-2xl transition-transform duration-500 hover:scale-[1.02] overflow-hidden cursor-pointer"
+                            onclick="openModal('image/research/3-1.jpg', '图 3-1: 基于深度学习的代码漏洞检测框架示意图，展示从源码到漏洞分类的完整分析过程')">
+                            <img src="image/research/3-1.jpg" alt="图 2-1" />
+                        </div>
+                        <p class="text-sm text-center text-slate-500 mt-2">
+                            图3-1：基于深度学习的代码漏洞检测框架示意图，展示从源码到漏洞分类的完整分析过程
+                        </p>
+                    </div>
+                    <div class="md:col-span-6">
+                        <div class="rounded-xl shadow-2xl transition-transform duration-500 hover:scale-[1.02] overflow-hidden cursor-pointer"
+                            onclick="openModal('image/research/3-2.png', '图 3-2: 结构分析')">
+                            <img src="image/research/3pld.png" alt="图 2-2" />
+                        </div>
+                        <p class="text-sm text-center text-slate-500 mt-2">
+                            图3-2：结构分析
+                        </p>
+                    </div>
+                </div>
+                <!-- 第四个大方向 -->
+                <div class="text-center mb-16 ">
+                    <h3
+                        class="text-4xl font-extrabold text-slate-900 sm:text-5xl mb-4  text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-teal-500  ">
+                        #4. 人工智能安全与应用
+                    </h3>
+                    —— 开启AI防护结界，让模型无惧攻击、数据无忧泄露、系统无可撼动！
+                </div>
+                <div
+                    class="grid md:grid-cols-12 gap-6 items-center bg-white p-8 md:p-12 rounded-2xl shadow-xl border border-slate-100">
+
+                    <div class="md:col-span-12">
+
+                        <h4 class="mt-2 text-2xl font-extrabold text-slate-900 leading-snug">
+                            以 AI 驱动代码结构解析、性能瓶颈定位与效率迭代，实现软件全生命周期的智能提质增效。
+                        </h4>
+                        <p class="mt-4 text-slate-600 text-lg">
+                            <b>神经网络安全：</b> 探索图数据上的攻击与防御技术，包括模型萃取、对抗性图攻击、图神经网络的鲁棒性分析，及其在现实场景中的应用。<br>
+                            <b>数据隐私保护： </b> 研究如何在保证AI模型性能的同时，利用差分隐私、联邦学习和加密计算等技术，防止数据泄露，提高数据安全性。 <br>
+                            <b>大模型安全： </b>研究大模型在对抗攻击、隐私泄露、模型偏差等方面的安全挑战，并探索防护措施。<br>
+                            <b>AI系统安全评估与防御：</b> 构建AI安全评估体系，量化测量模型在真实环境中的安全性。
+                        </p>
+                    </div>
+
+                    <div class="md:col-span-12">
+                        <div class="rounded-xl shadow-2xl transition-transform duration-500 hover:scale-[1.02] overflow-hidden cursor-pointer"
+                            onclick="openModal('image/research/4-1.jpg', '图 4-1: 人工智能安全与应用')">
+                            <img src="image/research/4-1.jpg" alt="图 4-1" />
+                        </div>
+                        <p class="text-sm text-center text-slate-500 mt-2">
+                            图4-1：人工智能安全与应用
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Publication部分 -->
+    <section id="publications" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <header class="text-center mb-16">
+                <h2 class="text-xs font-semibold tracking-widest text-blue-600 uppercase mb-2">
+                    RESEARCH OUTPUT
+                </h2>
+                <h3 class="text-4xl font-extrabold text-slate-900 sm:text-5xl">
+                    精选研究成果 (Publications)
+                </h3>
+                <p class="max-w-3xl mx-auto text-xl text-slate-600 mt-4">
+                    以下列出本团队近年来在顶级会议和期刊上发表的代表性工作。
+                </p>
+            </header>
+
+            <div id="publication-list" class="space-y-8">
+            </div>
+
+            <div class="flex justify-center mt-12 space-x-2" id="pub-pagination-controls">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact部分 -->
+    <section id="contact" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <header class="text-center mb-12">
+                <h2 class="text-xs font-semibold tracking-widest text-red-600 uppercase mb-2">
+                    GET IN TOUCH
+                </h2>
+                <h3 class="text-4xl font-extrabold text-slate-900 sm:text-5xl">
+                    联系我们 (Contact & Location)
+                </h3>
+            </header>
+
+            <!-- <div class="mb-16 text-center">
+                <img src="image/ouc-dig.png" alt="[您的实验室名称] Logo" class="mx-auto max-w-sm h-auto" />
+                <h4 class="text-2xl font-semibold text-slate-700 mt-4">OUC-DIG</h4>
+            </div> -->
+
+            <div class="grid lg:grid-cols-3 gap-12">
+
+                <div class="lg:col-span-2 space-y-8">
+
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-slate-100">
+                        <h4 class="text-2xl font-bold text-slate-900 mb-4 border-b pb-2">🏫 实验室地址</h4>
+                        <p class="text-lg text-slate-600 font-semibold mb-2">
+                            [中国海洋大学-西海岸校区]
+                        </p>
+                        <p class="text-slate-700">
+                            青岛市黄岛区三沙路1299号，信息南楼C512室
+                        </p>
+                        <p class="text-slate-700">
+                            邮编: [266003]
+                        </p>
+                        <p class="text-slate-500 mt-4 text-sm italic">
+                            注意：来访前请务必提前通过邮件联系导师或学生事务联系人。
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-2xl font-bold text-slate-900 mb-4">📍 地理位置 (Map)</h4>
+                        <div class="w-full h-96 bg-gray-200 rounded-xl shadow-xl overflow-hidden">
+                            <iframe src="https://map.baidu.com/search/%E9%9D%92%E5%B2%9B%E5%B8%82%E9%BB%84%E5%B2%9B%E5%8C%BA%E4%B8%89%E6%B2%99%E8%B7%AF1299%E5%8F%B7/@13361418.198470693,4244933.159007637,15.69z?querytype=s&da_src=shareurl&wd=%E9%9D%92%E5%B2%9B%E5%B8%82%E9%BB%84%E5%B2%9B%E5%8C%BA%E4%B8%89%E6%B2%99%E8%B7%AF1299%E5%8F%B7&c=1&src=0&pn=0&sug=0&l=13&b=(13524368,3454374;13606288,3495046)&from=webmap&biz_forward=%7B%22scaler%22:1,%22styles%22:%22pl%22%7D&device_ratio=1" width="100%" height="100%" style="border:0;"
+                                allowfullscreen="" loading="lazy" title="实验室地理位置">
+
+                                <div class="flex items-center justify-center h-full text-slate-500">
+                                    地图嵌入占位符：请在此处插入地图 iframe 代码
+                                </div>
+                            </iframe>
                         </div>
                     </div>
                 </div>
-                <!-- 搜索框 -->
-                <div class="max-w-md mx-auto mb-10">
-                    <input 
-                        type="text" 
-                        id="team-search" 
-                        placeholder="Search members..." 
-                        class="w-full px-4 py-2 border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
-                        oninput="searchTeam()"
-                    >
-                </div>
-                <div class="flex flex-wrap justify-center gap-2 mb-12" id="team-filters">
-                    <button onclick="filterTeam('all')" class="filter-btn active px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 border border-transparent">
-                        All Members
-                    </button>
-                    <button onclick="filterTeam('faculty')" class="filter-btn px-6 py-2 rounded-full text-sm font-medium text-slate-600 hover:bg-slate-100 transition-all duration-300 border border-slate-200">
-                        Faculty
-                    </button>
-                    <button onclick="filterTeam('phd')" class="filter-btn px-6 py-2 rounded-full text-sm font-medium text-slate-600 hover:bg-slate-100 transition-all duration-300 border border-slate-200">
-                        PhD Students
-                    </button>
-                    <button onclick="filterTeam('master2025')" class="filter-btn px-6 py-2 rounded-full text-sm font-medium text-slate-600 hover:bg-slate-100 transition-all duration-300 border border-slate-200">
-                        Master 2025
-                    </button>
-                    <button onclick="filterTeam('master2024')" class="filter-btn px-6 py-2 rounded-full text-sm font-medium text-slate-600 hover:bg-slate-100 transition-all duration-300 border border-slate-200">
-                        Master 2024
-                    </button>
-                    <button onclick="filterTeam('master2023')" class="filter-btn px-6 py-2 rounded-full text-sm font-medium text-slate-600 hover:bg-slate-100 transition-all duration-300 border border-slate-200">
-                        Master 2023
-                    </button>
-                </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8" id="team-grid">
-                    <!-- JS will insert cards here -->
+                <div class="lg:col-span-1 space-y-10">
+
+                    <div>
+                        <h4 class="text-2xl font-bold text-red-600 mb-6 border-b border-red-200 pb-2">👤 导师/负责人 </h4>
+                        <div class="space-y-6">
+                            <div class="p-4 bg-white rounded-lg shadow-md border-l-4 border-red-500">
+                                <p class="font-bold text-slate-900 text-lg">姜桂圆 </p>
+                                <p class="text-sm text-slate-600 mt-1">📧 Email: jiangguiyuan@ouc.edu.cn</p>
+                                
+                            </div>
+                            <div class="p-4 bg-white rounded-lg shadow-md border-l-4 border-red-500">
+                                <p class="font-bold text-slate-900 text-lg">贺佩兰</p>
+                                <p class="text-sm text-slate-600 mt-1">📧 Email: hepeilan@ouc.edu.cn</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="text-2xl font-bold text-blue-600 mb-6 border-b border-blue-200 pb-2">🎓 学生事务联系人
+                            (Student Contact)</h4>
+                        <div class="space-y-6">
+                            <div class="p-4 bg-white rounded-lg shadow-md border-l-4 border-blue-500">
+                                <p class="font-bold text-slate-900 text-lg">李权峰</p>
+                                <p class="text-sm text-slate-600">📞 Phone: +86 17853985665</p>
+                            </div>
+                            <div class="p-4 bg-white rounded-lg shadow-md border-l-4 border-blue-500">
+                                <p class="font-bold text-slate-900 text-lg">刘泷泽</p>
+                                <p class="text-sm text-slate-600">📞 Phone: +86 15621099982</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
-        </section>
+        </div>
+    </section>
+
 
     <div class="bg-slate-100 py-10 text-center text-slate-400 text-sm">
         © Copyright Data Intelligence Group - 2025
     </div>
+    <!-- 用于查看放大图片 -->
+    <div id="image-modal"
+        class="fixed inset-0 bg-black bg-opacity-90 z-[9999] hidden flex justify-center items-center p-4 transition duration-300"
+        onclick="closeModal()">
 
+        <div class="relative max-w-5xl max-h-full" onclick="event.stopPropagation()">
+
+            <button onclick="closeModal()"
+                class="absolute -top-10 right-0 text-white text-3xl font-bold p-2 transition duration-200 hover:text-blue-400">
+                &times;
+            </button>
+
+            <img id="modal-image" src="" alt="放大图" class="max-h-[90vh] w-auto rounded-lg shadow-2xl cursor-pointer"
+                onclick="closeModal()">
+
+            <div id="modal-caption" class="mt-4 text-center text-white text-lg font-light max-w-full">
+            </div>
+
+        </div>
+    </div>
 </body>
 <script>
-    let currentFilter = "all";
 
+    let memberData = [
+        {
+            "name": "姜桂圆",
+            "role": "Associate Professor",
+            "category": "faculty",
+            "img": "image/people/jgy.jpg",
+            "description": "副教授 | 博士生导师 | 国家级/省级引才计划中国海洋大学信息科学与工程学部",
+            "url": "https://it.ouc.edu.cn/jgy/list.htm"
+        },
+        {
+            "name": "贺佩兰",
+            "role": "Lecturer",
+            "category": "faculty",
+            "img": "image/people/plh.jpg",
+            "description": "讲师 | 硕士生导师 | 国家级博士后海外引才计划中国海洋大学信息科学与工程学部",
+            "url": "https://it.ouc.edu.cn/hpl/list.htm"
+        },
+        {
+            "name": "赵晓彤",
+            "role": "PhD Student (2025)",
+            "category": "phd",
+            "img": "image/people/zxt.jpg",
+            "description": "研究方向：交通数据分析与应用"
+        },
+        {
+            "name": "李权峰",
+            "role": "PhD Student (2025)",
+            "category": "phd",
+            "img": "image/people/lqf.jpg",
+            "description": "研究方向：代码安全"
+        },
+        {
+            "name": "刘泷泽",
+            "role": "PhD Student ",
+            "category": "phd",
+            "img": "image/people/llz.jpg",
+            "description": "研究方向：组合优化"
+        },
+        {
+            "name": "崔龙跃",
+            "role": "Master Student (2023)",
+            "category": "master2023",
+            "img": "image/people/cly.jpg",
+            "description": "研究方向：交通大数据"
+        }, {
+            "name": "周承文",
+            "role": "Master Student (2023)",
+            "category": "master2023",
+            "img": "image/people/zcw.png",
+            "description": "研究方向：代码安全"
+        }, {
+            "name": "吴梦婷",
+            "role": "Master Student (2023)",
+            "category": "master2023",
+            "img": "image/people/wmt.jpg",
+            "description": "研究方向：交通大数据"
+        }, {
+            "name": "叶传梁",
+            "role": "Master Student (2023)",
+            "category": "master2023",
+            "img": "image/people/ycl.png",
+            "description": "研究方向：图攻击"
+        }, {
+            "name": "王以晓",
+            "role": "Master Student (2023)",
+            "category": "master2023",
+            "img": "image/people/wyx.jpg",
+            "description": "研究方向：交通大数据"
+        }, {
+            "name": "王浩文",
+            "role": "Master Student (2023)",
+            "category": "master2023",
+            "img": "image/people/whw.png",
+            "description": "研究方向：代码安全"
+        }, {
+            "name": "高荣昊",
+            "role": "Master Student (2023)",
+            "category": "master2023",
+            "img": "image/people/grh.jpg",
+            "description": "研究方向：交通大数据"
+        }, {
+            "name": "赵腾飞",
+            "role": "Master Student (2023)",
+            "category": "master2023",
+            "img": "image/people/ztf.jpg",
+            "description": "研究方向：交通大数据"
+        }, {
+            "name": "李豪",
+            "role": "Master Student (2024)",
+            "category": "master2024",
+            "img": "image/people/lihao.jpg",
+            "description": "研究方向：代码安全"
+        }, {
+            "name": "毛俊杰",
+            "role": "Master Student (2024)",
+            "category": "master2024",
+            "img": "image/people/maojunjie.jpg",
+            "description": "研究方向：交通大数据"
+        }, {
+            "name": "王俊龙",
+            "role": "Master Student (2024)",
+            "category": "master2024",
+            "img": "image/people/wangjunlong.jpg",
+            "description": "研究方向：代码安全"
+        }, {
+            "name": "杨明坤",
+            "role": "Master Student (2024)",
+            "category": "master2024",
+            "img": "image/people/yangmingkun.jpg",
+            "description": "研究方向：代码安全"
+        }, {
+            "name": "董屹涛",
+            "role": "Master Student (2024)",
+            "category": "master2024",
+            "img": "image/people/dongyitao.jpg",
+            "description": "研究方向：图攻击"
+        }, {
+            "name": "张泽纬",
+            "role": "Master Student (2024)",
+            "category": "master2024",
+            "img": "image/people/zhangzewei.jpg",
+            "description": "研究方向：4D轨迹预测"
+        }, {
+            "name": "王小璐",
+            "role": "Master Student (2024)",
+            "category": "master2024",
+            "img": "image/people/wangxiaolu.jpg",
+            "description": "研究方向：组合优化"
+        }, {
+            "name": "祁耀东",
+            "role": "Master Student (2024)",
+            "category": "master2024",
+            "img": "image/people/qiyaodong.jpg",
+            "description": "研究方向：交通大数据"
+        }, {
+            "name": "李红帅",
+            "role": "Master Student (2024)",
+            "category": "master2024",
+            "img": "image/people/lihongshuai.jpg",
+            "description": "研究方向：代码安全"
+        }, {
+            "name": "李德彧",
+            "role": "Master Student (2024)",
+            "category": "master2024",
+            "img": "image/people/lideyu.jpg",
+            "description": "研究方向：4D轨迹预测"
+        }, {
+            "name": "张曾锋",
+            "role": "Master Student (2024)",
+            "category": "master2024",
+            "img": "image/people/zhangzengfeng.jpg",
+            "description": "研究方向：交通大数据"
+        }, {
+            "name": "金邺诚",
+            "role": "Master Student (2024)",
+            "category": "master2024",
+            "img": "image/people/jinyecheng.jpg",
+            "description": "研究方向：4D轨迹预测"
+        }, {
+            "name": "刘翔宇",
+            "role": "Master Student (2024)",
+            "category": "master2024",
+            "img": "image/people/liuxiangyu.jpg",
+            "description": "研究方向：组合优化"
+        }, {
+            "name": "耿庆桦",
+            "role": "Master Student (2024)",
+            "category": "master2024",
+            "img": "image/people/gengqinghua.jpg",
+            "description": "研究方向：交通大数据"
+        }, {
+            "name": "于冲",
+            "role": "Master Student (2025)",
+            "category": "master2025",
+            "img": "image/people/yuchong.jpg",
+            "description": ""
+        }, {
+            "name": "吴子博",
+            "role": "Master Student (2025)",
+            "category": "master2025",
+            "img": "image/people/wuzibo.jpg",
+            "description": ""
+        }, {
+            "name": "匡淼",
+            "role": "Master Student (2025)",
+            "category": "master2025",
+            "img": "image/people/kuangmiao.jpg",
+            "description": ""
+        }, {
+            "name": "李子昊",
+            "role": "Master Student (2025)",
+            "category": "master2025",
+            "img": "image/people/lizihao.jpg",
+            "description": ""
+        }, {
+            "name": "陈明威",
+            "role": "Master Student (2025)",
+            "category": "master2025",
+            "img": "image/people/chenmingwei.jpg",
+            "description": ""
+        }, {
+            "name": "朱峰辉",
+            "role": "Master Student (2025)",
+            "category": "master2025",
+            "img": "image/people/zhufenghui.png",
+            "description": ""
+        }, {
+            "name": "李雨行",
+            "role": "Master Student (2025)",
+            "category": "master2025",
+            "img": "image/people/liyuhang.jpg",
+            "description": ""
+        }, {
+            "name": "田恩",
+            "role": "Master Student (2025)",
+            "category": "master2025",
+            "img": "image/people/tianen.jpg",
+            "description": ""
+        }, {
+            "name": "阮明航",
+            "role": "Master Student (2025)",
+            "category": "master2025",
+            "img": "image/people/ruanminghang.jpg",
+            "description": ""
+        }
+    ];
+
+</script>
+<script>
+    // ----------------------------
+    // 全局状态和配置
+    // ----------------------------
+    let currentFilter = "all";
+    let filteredMembers = []; // 存储当前过滤/搜索后的成员列表
+    let currentPage = 1;
+    const membersPerPage = 12; // 每页显示 x 人 
+
+    // ----------------------------
+    // 核心函数：根据当前页码和过滤结果渲染
+    // ----------------------------
+    function paginateAndRender() {
+        if (filteredMembers.length === 0) {
+            renderTeam([]);
+            renderPagination(0);
+            return;
+        }
+
+        const totalPages = Math.ceil(filteredMembers.length / membersPerPage);
+
+        // 确保当前页码不越界
+        if (currentPage > totalPages) currentPage = totalPages;
+        if (currentPage < 1) currentPage = 1;
+
+        const startIndex = (currentPage - 1) * membersPerPage;
+        const endIndex = startIndex + membersPerPage;
+
+        // 截取当前页的数据
+        const membersToRender = filteredMembers.slice(startIndex, endIndex);
+
+        // 渲染卡片和分页按钮
+        renderTeam(membersToRender);
+        renderPagination(totalPages);
+    }
+
+    // ----------------------------
+    // 渲染分页按钮
+    // ----------------------------
+    function renderPagination(totalPages) {
+        const controls = document.getElementById("pagination-controls");
+        controls.innerHTML = '';
+
+        if (totalPages <= 1) return;
+
+        // 渲染页码按钮
+        for (let i = 1; i <= totalPages; i++) {
+            const button = document.createElement('button');
+            button.innerText = i;
+            button.className = `px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 
+                                 ${i === currentPage
+                    ? 'bg-blue-600 text-white shadow-lg'
+                    : 'bg-white text-slate-700 hover:bg-blue-50 hover:text-blue-600 border border-slate-200'}`;
+            button.onclick = () => goToPage(i);
+            controls.appendChild(button);
+        }
+    }
+
+    // ----------------------------
+    // 跳转到指定页码
+    // ----------------------------
+    function goToPage(page) {
+        currentPage = page;
+        paginateAndRender();
+        // 每次翻页后自动滚动到团队区域顶部，提供更好体验
+        // document.getElementById('team').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+
+    // ----------------------------
+    // 分类过滤 (修正版：过滤数据并重置页码，不直接渲染)
+    // ----------------------------
     function filterTeam(category) {
         currentFilter = category;
-        const cards = document.querySelectorAll(".team-card");
-
-        // 处理按钮样式
-        document.querySelectorAll(".filter-btn").forEach(btn => btn.classList.remove("active"));
-        event.target.classList.add("active");
-
-        cards.forEach(card => {
-            const matchCategory = category === "all" || card.dataset.category === category;
-            const matchSearch = searchMatch(card);
-
-            card.style.display = (matchCategory && matchSearch) ? "block" : "none";
-        });
-    }
-
-    function searchTeam() {
-        const cards = document.querySelectorAll(".team-card");
-
-        cards.forEach(card => {
-            const matchCategory = currentFilter === "all" || card.dataset.category === currentFilter;
-            const matchSearch = searchMatch(card);
-
-            card.style.display = (matchCategory && matchSearch) ? "block" : "none";
-        });
-    }
-
-    function searchMatch(card) {
         const keyword = document.getElementById("team-search").value.toLowerCase();
-        if (!keyword) return true;
 
-        return card.innerText.toLowerCase().includes(keyword);
+        // 1. 执行过滤逻辑 (只过滤，不分页)
+        filteredMembers = memberData.filter(person => {
+            const matchCategory = category === "all" || person.category === category;
+            const matchSearch = person.name.toLowerCase().includes(keyword)
+                || person.role.toLowerCase().includes(keyword)
+                || person.description.toLowerCase().includes(keyword);
+            return matchCategory && matchSearch;
+        });
+
+        // 2. 按钮高亮逻辑修正: 根据 category 字符串找到对应的按钮
+        document.querySelectorAll(".filter-btn").forEach(btn => {
+            btn.classList.remove("active");
+            // 检查按钮的 onclick 属性是否包含目标 category 字符串
+            if (btn.getAttribute('onclick').includes(`'${category}'`)) {
+                btn.classList.add("active");
+            }
+        });
+
+        // 3. 重置页码并开始分页渲染
+        currentPage = 1;
+        paginateAndRender();
     }
-    // 当前过滤条件
- currentFilter = "all";
-let memberData = [];
-
-// ----------------------------
-// 加载 JSON 文件
-// ----------------------------
-fetch("data/people.json")
-    .then(res => res.json())
-    .then(data => {
-        memberData = data;
-        renderTeam(memberData);
-    })
-    .catch(err => console.error("Failed to load people.json:", err));
 
 
-// ----------------------------
-// 根据数据渲染人员卡片
-// ----------------------------
-function renderTeam(data) {
-    const grid = document.getElementById("team-grid");
-    grid.innerHTML = ""; // 清空原内容
+    // ----------------------------
+    // 搜索功能 (修正版：重置页码，不直接渲染)
+    // ----------------------------
+    function searchTeam() {
+        const keyword = document.getElementById("team-search").value.toLowerCase();
 
-    data.forEach(person => {
-        const card = document.createElement("div");
-        card.className =
-            "team-card group bg-white rounded-xl border border-slate-200 p-6 hover:shadow-lg transition-all hover:-translate-y-1";
-        card.dataset.category = person.category;
+        // 1. 执行过滤逻辑 (只过滤，不分页)
+        filteredMembers = memberData.filter(person => {
+            const matchCategory = currentFilter === "all" || person.category === currentFilter;
+            const matchSearch = person.name.toLowerCase().includes(keyword)
+                || person.role.toLowerCase().includes(keyword)
+                || person.description.toLowerCase().includes(keyword);
+            return matchCategory && matchSearch;
+        });
 
-        card.innerHTML = `
-            <div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 ring-4 ring-blue-50">
-                <img src="${person.img}" alt="${person.name}" class="w-full h-full object-cover">
-            </div>
-            <div class="text-center">
-                <h3 class="text-lg font-bold text-slate-900"><a href="${person.url}" target="_blank">${person.name}</a></h3>
-                <p class="text-blue-600 text-sm font-medium mb-2">${person.role}</p>
-                <p class="text-slate-500 text-xs mb-4 line-clamp-3">
-                    ${person.description}
+        // 2. 重置页码并开始分页渲染
+        currentPage = 1;
+        paginateAndRender();
+    }
+
+    // ----------------------------
+    // 渲染人员卡片 (现在接收的是分页后的数据)
+    // ----------------------------
+    function renderTeam(data) {
+        const grid = document.getElementById("team-grid");
+        grid.innerHTML = ""; // 清空原内容
+
+        if (data.length === 0) {
+            grid.innerHTML = '<div class="lg:col-span-4 text-center py-10 text-slate-500 text-lg">没有找到匹配的成员。</div>';
+            return;
+        }
+
+        data.forEach(person => {
+            const card = document.createElement("div");
+            // ... (卡片样式和内容保持不变) ...
+            card.className =
+                "team-card group bg-white rounded-xl border border-slate-200 p-6 hover:shadow-lg transition-all hover:-translate-y-1";
+            card.dataset.category = person.category;
+
+            card.innerHTML = `
+                <div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 ring-4 ring-blue-50">
+                    <img src="${person.img}" loading="lazy" alt="${person.name}" class="w-full h-full object-cover">
+                </div>
+                <div class="text-center">
+                    <h3 class="text-lg font-bold text-slate-900"><a href="${person.url}" target="_blank">${person.name}</a></h3>
+                    <p class="text-blue-600 text-sm font-medium mb-2">${person.role}</p>
+                    <p class="text-slate-500 text-xs mb-4 line-clamp-3">
+                        ${person.description}
+                    </p>
+                </div>
+            `;
+            grid.appendChild(card);
+        });
+    }
+
+
+    // ----------------------------
+    // 页面加载后自动初始化 (解决一开始不显示的问题)
+    // ----------------------------
+    document.addEventListener("DOMContentLoaded", () => {
+        // 强制运行一次 'all' 筛选，以确保数据初始化、筛选和分页渲染都正确执行
+        filterTeam('all');
+    });
+    // ----------------------------
+
+    // 图片放大模态框控制 (更新: 接受并显示说明文字)
+    // ----------------------------
+    function openModal(imageSrc, captionText) { // 接收第二个参数 captionText
+        const modal = document.getElementById('image-modal');
+        const modalImage = document.getElementById('modal-image');
+        const modalCaption = document.getElementById('modal-caption'); // 获取说明文字元素
+
+        modalImage.src = imageSrc;
+        modalCaption.innerText = captionText; // 设置说明文字内容
+
+        modal.classList.remove('hidden');
+
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        const modal = document.getElementById('image-modal');
+
+        modal.classList.add('hidden');
+
+        document.body.style.overflow = '';
+    }
+
+
+
+
+    // publication部分的逻辑控制
+    // ... (您的 memberData, filterTeam, renderTeam 等函数之后) ...
+    // ----------------------------------------------------
+    // Publications 全局状态和配置
+    // ----------------------------------------------------
+    let pubCurrentPage = 1;
+    const pubsPerPage = 5; // 每页展示 5 条成果
+    // ----------------------------------------------------
+    // Publications 数据定义
+    // ----------------------------------------------------
+
+    const publicationData = [
+        {
+            title: "Computer Vision Framework for Crack Detection of Civil Infrastructure - A Review.",
+            authors: [
+                { name: "Dihao Ai", isGroupMember: false }, // isGroupMember: true 表示是组内成员，会被高亮
+                { name: "Guiyuan Jiang", isGroupMember: true, }, // isCorresponding: true 表示通讯作者
+                { name: "Siew-Kei Lam", isGroupMember: false },
+                { name: "Peilan He", isGroupMember: true, },
+                { name: "Chengwu Li", isGroupMember: false }, // 外部合作者
+            ],
+            venue: "Engineering Applications of Artificial Intelligence (EAAI) (中科院2区, IF:7.802)",
+            year: 2023,
+            links: [ // 链接列表，可以包含 PDF, Code, Project Page, DOI 等
+                { type: "PDF", url: "https://www.sciencedirect.com/science/article/abs/pii/S0952197622004687" },
+
+            ]
+        },
+        {
+            title: "Causal Representation Learning for Robust and Fair Decision Making in Healthcare",
+            authors: [
+                { name: "Zhao Liu", isGroupMember: true },
+                { name: "Zhang San", isGroupMember: true, isCorresponding: true },
+                { name: "Wang Wu", isGroupMember: true },
+            ],
+            venue: "IEEE Transactions on Knowledge and Data Engineering (TKDE)",
+            year: 2024,
+            links: [
+                { type: "PDF", url: "#link-to-tkde-pdf" },
+                { type: "Project Page", url: "#link-to-tkde-project" }
+            ]
+        },
+        {
+            title: "Knowledge-Grounded Reasoning with Retrieval-Augmented Large Language Models",
+            authors: [
+                { name: "Qian Qi", isGroupMember: true },
+                { name: "Li Si", isGroupMember: true },
+                { name: "Sun Ba", isGroupMember: true },
+            ],
+            venue: "Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)",
+            year: 2023,
+            links: [
+                { type: "PDF", url: "#link-to-aaai-pdf" },
+            ]
+        },
+        {
+            title: "Knowledge-Grounded Reasoning with Retrieval-Augmented Large Language Models",
+            authors: [
+                { name: "Qian Qi", isGroupMember: true },
+                { name: "Li Si", isGroupMember: true },
+                { name: "Sun Ba", isGroupMember: true },
+            ],
+            venue: "Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)",
+            year: 2023,
+            links: [
+                { type: "PDF", url: "#link-to-aaai-pdf" },
+            ]
+        }, {
+            title: "Knowledge-Grounded Reasoning with Retrieval-Augmented Large Language Models",
+            authors: [
+                { name: "Qian Qi", isGroupMember: true },
+                { name: "Li Si", isGroupMember: true },
+                { name: "Sun Ba", isGroupMember: true },
+            ],
+            venue: "Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)",
+            year: 2023,
+            links: [
+                { type: "PDF", url: "#link-to-aaai-pdf" },
+            ]
+        }, {
+            title: "Knowledge-Grounded Reasoning with Retrieval-Augmented Large Language Models",
+            authors: [
+                { name: "Qian Qi", isGroupMember: true },
+                { name: "Li Si", isGroupMember: true },
+                { name: "Sun Ba", isGroupMember: true },
+            ],
+            venue: "Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)",
+            year: 2023,
+            links: [
+                { type: "PDF", url: "#link-to-aaai-pdf" },
+            ]
+        }, {
+            title: "Knowledge-Grounded Reasoning with Retrieval-Augmented Large Language Models",
+            authors: [
+                { name: "Qian Qi", isGroupMember: true },
+                { name: "Li Si", isGroupMember: true },
+                { name: "Sun Ba", isGroupMember: true },
+            ],
+            venue: "Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)",
+            year: 2023,
+            links: [
+                { type: "PDF", url: "#link-to-aaai-pdf" },
+            ]
+        }, {
+            title: "Knowledge-Grounded Reasoning with Retrieval-Augmented Large Language Models",
+            authors: [
+                { name: "Qian Qi", isGroupMember: true },
+                { name: "Li Si", isGroupMember: true },
+                { name: "Sun Ba", isGroupMember: true },
+            ],
+            venue: "Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)",
+            year: 2023,
+            links: [
+                { type: "PDF", url: "#link-to-aaai-pdf" },
+            ]
+        }, {
+            title: "Knowledge-Grounded Reasoning with Retrieval-Augmented Large Language Models",
+            authors: [
+                { name: "Qian Qi", isGroupMember: true },
+                { name: "Li Si", isGroupMember: true },
+                { name: "Sun Ba", isGroupMember: true },
+            ],
+            venue: "Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)",
+            year: 2023,
+            links: [
+                { type: "PDF", url: "#link-to-aaai-pdf" },
+            ]
+        }, {
+            title: "Knowledge-Grounded Reasoning with Retrieval-Augmented Large Language Models",
+            authors: [
+                { name: "Qian Qi", isGroupMember: true },
+                { name: "Li Si", isGroupMember: true },
+                { name: "Sun Ba", isGroupMember: true },
+            ],
+            venue: "Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)",
+            year: 2023,
+            links: [
+                { type: "PDF", url: "#link-to-aaai-pdf" },
+            ]
+        }, {
+            title: "Knowledge-Grounded Reasoning with Retrieval-Augmented Large Language Models",
+            authors: [
+                { name: "Qian Qi", isGroupMember: true },
+                { name: "Li Si", isGroupMember: true },
+                { name: "Sun Ba", isGroupMember: true },
+            ],
+            venue: "Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)",
+            year: 2023,
+            links: [
+                { type: "PDF", url: "#link-to-aaai-pdf" },
+            ]
+        }, {
+            title: "Knowledge-Grounded Reasoning with Retrieval-Augmented Large Language Models",
+            authors: [
+                { name: "Qian Qi", isGroupMember: true },
+                { name: "Li Si", isGroupMember: true },
+                { name: "Sun Ba", isGroupMember: true },
+            ],
+            venue: "Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)",
+            year: 2023,
+            links: [
+                { type: "PDF", url: "#link-to-aaai-pdf" },
+            ]
+        },
+
+
+        // *** 请在此处添加更多的论文数据 ***
+    ];
+
+
+    // ----------------------------
+    // 核心函数：根据当前页码和数据渲染 Publications
+    // ----------------------------
+    function paginateAndRenderPublications() {
+        // 假设数据是按年份倒序排列的 (在 People 模块中已实现)
+        const sortedData = [...publicationData].sort((a, b) => b.year - a.year);
+
+        if (sortedData.length === 0) {
+            renderPublicationItems([]);
+            renderPubPagination(0);
+            return;
+        }
+
+        const totalPages = Math.ceil(sortedData.length / pubsPerPage);
+
+        // 确保当前页码不越界
+        if (pubCurrentPage > totalPages) pubCurrentPage = totalPages;
+        if (pubCurrentPage < 1) pubCurrentPage = 1;
+
+        const startIndex = (pubCurrentPage - 1) * pubsPerPage;
+        const endIndex = startIndex + pubsPerPage;
+
+        // 截取当前页的数据
+        const publicationsToRender = sortedData.slice(startIndex, endIndex);
+
+        // 渲染成果条目和分页按钮
+        renderPublicationItems(publicationsToRender, sortedData); // 传递 sortedData 以便正确编号
+        renderPubPagination(totalPages);
+    }
+
+    // ----------------------------
+    // 渲染分页按钮
+    // ----------------------------
+    function renderPubPagination(totalPages) {
+        const controls = document.getElementById("pub-pagination-controls");
+        if (!controls) return;
+        controls.innerHTML = '';
+
+        if (totalPages <= 1) return;
+
+        // 渲染页码按钮
+        for (let i = 1; i <= totalPages; i++) {
+            const button = document.createElement('button');
+            button.innerText = i;
+            button.className = `px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 
+                             ${i === pubCurrentPage
+                    ? 'bg-blue-600 text-white shadow-lg'
+                    : 'bg-white text-slate-700 hover:bg-blue-50 hover:text-blue-600 border border-slate-200'}`;
+            button.onclick = () => goToPubPage(i);
+            controls.appendChild(button);
+        }
+    }
+
+    // ----------------------------
+    // 跳转到指定页码
+    // ----------------------------
+    function goToPubPage(page) {
+        pubCurrentPage = page;
+        paginateAndRenderPublications();
+        // 每次翻页后自动滚动到 Publications 区域顶部
+        // document.getElementById('publications').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+
+    // ----------------------------
+    // 渲染 Publications 列表条目 (更新：现接收当前页数据和全量排序数据)
+    // ----------------------------
+    function renderPublicationItems(data, sortedData) {
+        const listContainer = document.getElementById("publication-list");
+        if (!listContainer) return;
+
+        let htmlContent = '';
+
+        if (data.length === 0) {
+            listContainer.innerHTML = '<div class="text-center py-10 text-slate-500 text-lg">没有找到研究成果。</div>';
+            return;
+        }
+
+        data.forEach((pub) => {
+
+            // 使用全量排序数据来确定论文的序号 [N].
+            const pubNumber = sortedData.findIndex(item => item === pub) + 1;
+
+            // 1. 处理作者列表
+            let authorsHtml = pub.authors.map(author => {
+                let authorClass = author.isGroupMember ? 'font-bold text-red-600' : 'text-slate-700';
+                let name = author.name;
+                if (author.isCorresponding) {
+                    name += '<sup class="ml-0.5 align-top text-red-600">★</sup>';
+                }
+                return `<span class="${authorClass}">${name}</span>`;
+            }).join(', ');
+
+            // 2. 处理链接按钮
+            let linksHtml = pub.links.map(link => {
+                const buttonClass = link.type === "PDF"
+                    ? 'bg-blue-50 text-blue-600 hover:bg-blue-100'
+                    : 'bg-slate-50 text-slate-600 hover:bg-slate-100';
+
+                return `
+                <a href="${link.url}" target="_blank" class="text-xs font-medium px-3 py-1 rounded-full ${buttonClass} transition shadow-sm">
+                    ${link.type}
+                </a>
+            `;
+            }).join('');
+
+            // 3. 拼接最终 HTML 结构
+            htmlContent += `
+            <div class="p-6 border border-slate-200 rounded-lg transition-all duration-300 hover:shadow-lg hover:border-blue-400">
+                <p class="text-lg font-semibold text-slate-900 leading-relaxed">
+                    [${pubNumber}]. ${pub.title}
                 </p>
+                <p class="mt-1 text-sm text-slate-700">
+                    ${authorsHtml}.
+                    <br>
+                    <em class="text-slate-500">${pub.venue}</em>, ${pub.year}.
+                </p>
+                <div class="mt-3 flex flex-wrap gap-3">
+                    ${linksHtml}
+                </div>
             </div>
         `;
+        });
 
-        grid.appendChild(card);
+        listContainer.innerHTML = htmlContent;
+    }
+
+
+    // ----------------------------
+    // 页面加载后自动初始化 (更新: Publications 初始化改为调用分页函数)
+    // ----------------------------
+    document.addEventListener("DOMContentLoaded", () => {
+        // 初始化 People 模块
+        filterTeam('all');
+
+        // 初始化 Publications 模块 (调用分页渲染函数)
+        paginateAndRenderPublications();
     });
-}
+    // ----------------------------
+    // 页面加载后自动初始化 (更新: 添加 Publications 渲染)
+    // ----------------------------
+    document.addEventListener("DOMContentLoaded", () => {
+        // 初始化 People 模块
+        filterTeam('all');
 
-
-// ----------------------------
-// 分类过滤
-// ----------------------------
-        function filterTeam(category) {
-            currentFilter = category;
-            const keyword = document.getElementById("team-search").value.toLowerCase();
-
-            const filtered = memberData.filter(person => {
-                const matchCategory = category === "all" || person.category === category;
-                const matchSearch = person.name.toLowerCase().includes(keyword)
-                                || person.role.toLowerCase().includes(keyword)
-                                || person.description.toLowerCase().includes(keyword);
-                return matchCategory && matchSearch;
-            });
-
-            renderTeam(filtered);
-
-            // 按钮高亮
-            document.querySelectorAll(".filter-btn").forEach(btn => btn.classList.remove("active"));
-            event.target.classList.add("active");
-        }
-
-
-        // ----------------------------
-        // 搜索功能
-        // ----------------------------
-        function searchTeam() {
-            const keyword = document.getElementById("team-search").value.toLowerCase();
-
-            const filtered = memberData.filter(person => {
-                const matchCategory = currentFilter === "all" || person.category === currentFilter;
-                const matchSearch = person.name.toLowerCase().includes(keyword)
-                                || person.role.toLowerCase().includes(keyword)
-                                || person.description.toLowerCase().includes(keyword);
-                return matchCategory && matchSearch;
-            });
-
-            renderTeam(filtered);
-        }
+        // 初始化 Publications 模块
+        renderPublications();
+    });
 </script>
 
 </html>
