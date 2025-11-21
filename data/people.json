@@ -2,7 +2,7 @@
   {
     "name": "姜桂圆",
     "role": "Associate Professor",
-    "category": "Teacher",
+    "category": "faculty",
     "img": "image/people/jgy.jpg",
     "description": "副教授 | 博士生导师 | 国家级/省级引才计划中国海洋大学信息科学与工程学部",
     "url":"https://it.ouc.edu.cn/jgy/list.htm"
@@ -10,7 +10,7 @@
   {
     "name": "贺佩兰",
     "role": "Lecturer",
-    "category": "Teacher",
+    "category": "faculty",
     "img": "image/people/plh.jpg",
     "description": "讲师 | 硕士生导师 | 国家级博士后海外引才计划中国海洋大学信息科学与工程学部",
     "url":"https://it.ouc.edu.cn/hpl/list.htm"
@@ -46,7 +46,7 @@
     "name": "周承文",
     "role": "Master Student (2023)",
     "category": "master2023",
-    "img": "image/people/zcw.jpg",
+    "img": "image/people/zcw.png",
     "description": "研究方向：代码安全"
   },{
     "name": "吴梦婷",
@@ -208,13 +208,13 @@
     "name": "朱峰辉",
     "role": "Master Student (2025)",
     "category": "master2025",
-    "img": "image/people/zhufenghui.jpg",
+    "img": "image/people/zhufenghui.png",
     "description": ""
   },{
     "name": "李雨行",
     "role": "Master Student (2025)",
     "category": "master2025",
-    "img": "image/people/liyuhang.jpg",
+    "img": "image/people/liyuhang.png",
     "description": ""
   },{
     "name": "田恩",
